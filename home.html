@@ -1,7 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html lang = "en">
     <head>
         <title>MPLS Dogboarding </title>
+        <meta charset = "UTF-8">
+		<meta name = "description" content = "MPLS Dogboarding">
+		<meta name = "keywords" content = "dog boarding, mpls">
+		<meta name = "author" content = "Chris Sinclair">
+		<meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
         <style>
             body{
                 font-family: 'Montserrat', sans-serif;
@@ -61,6 +66,7 @@
                 padding: 10px;
                 background-color: #ffffffcf;
                 border-radius: 10px;
+                transition: all .2s ease-in-out;
             }
             #copyright{
                 width: 275px;
@@ -78,6 +84,33 @@
                 border-radius: 10px;
                 background-color: #000000dc;
             }
+            aside:hover {
+                background-color: #ff4500bd;
+                height: 325px;
+                color: white;
+            }
+            @media screen and (max-width: 1024px) {
+                aside{
+                    height: auto;
+                }
+                #flexcontainer {
+                    background-size: auto;
+                }
+            }
+            @media screen and (max-width: 768px) {
+                #flexcontainer {
+                    background-image: url("./img/dog_bg_768.jpg");
+                    background-size: cover;
+                }
+                aside {
+                    background-color: #000000cf;
+                    background-position: center;
+                    color: white;
+                }
+                #location_button {
+                    display: block;
+                }
+            }
         </style>
     </head>
     <body>
@@ -94,11 +127,9 @@
                 <aside>
                     <h2>Price</h2>
                     <h3>Weekly Boarding</h3>
-                    <p>$425 - 7 days [24 hours from drop-off time] </li>
+                    <p>$425 - 7 days [24 hours from drop-off time]
                     <h3>Daily Rate: </h3>
                     <p>$75 - 1 day [24 hours from drop-off time</p>
-                    
-                    </ul>
                 </aside>
                 <aside>
                     <h2>Hours of Operation</h2>
